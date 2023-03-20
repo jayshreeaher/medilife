@@ -9,7 +9,8 @@ export class HttpService {
    baseUrl:string=environment.baseUrl;
    httpHeaders:HttpHeaders = new HttpHeaders()
               .set("Content-type","application/json");
-  constructor(private http:HttpClient) { }
+
+    constructor(private http:HttpClient) { }
 
     getDataFromServer(endPoint:string){
       const url=this.baseUrl + endPoint;
