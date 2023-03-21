@@ -10,10 +10,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { TopDealsComponent } from './components/top-deals/top-deals.component';
 import{ HttpClientModule } from '@angular/common/http'
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TopDealsByCategoryComponent } from './components/top-deals-by-category/top-deals-by-category.component';
 import { ViewProductDetailsComponent } from './components/view-product-details/view-product-details.component';
 import { TopDealsHeaderComponent } from './components/top-deals-header/top-deals-header.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TopDealsHeaderComponent } from './components/top-deals-header/top-deals
     TopDealsComponent,
     TopDealsByCategoryComponent,
     ViewProductDetailsComponent,
-    TopDealsHeaderComponent
+    TopDealsHeaderComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { TopDealsHeaderComponent } from './components/top-deals-header/top-deals
     CarouselModule,
     HttpClientModule,
     FormsModule
+    
     
   ],
   providers: [],

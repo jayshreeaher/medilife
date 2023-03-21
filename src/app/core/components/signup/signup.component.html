@@ -1,0 +1,31 @@
+<form [formGroup]="signForm" (ngSubmit)="signUp()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">User Name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="userName">
+      
+    </div>
+    <div class="mb-3 input-group">
+      <label for="example" class="form-label">Mobile Number</label>
+      <input type="text" class="form-control" id="example" formControlName="mobileNo">
+        <span class="input-group-text"(click)="getotp()">Get Otp</span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+      </div>
+      <div *ngIf="isGetOtp">
+        <label for="otp" class="form-label">Enter Otp</label>
+        <div class="mb-3 input-group" >
+        <input type="password" class="form-control" id="otp">
+        <span class="input-group-text"(click)="verifyotp()">verify Otp</span>
+      </div>
+      <div>Qtp is valid for {{otpCounter}} </div>
+      </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+  </form>
