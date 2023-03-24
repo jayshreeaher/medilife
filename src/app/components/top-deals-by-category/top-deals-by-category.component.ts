@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/cart/cart.service';
 import { HttpService } from 'src/app/core/services/http.service';
+import { SharedService } from 'src/app/core/services/shared.service';
 
 @Component({
   selector: 'app-top-deals-by-category',
@@ -9,7 +11,7 @@ import { HttpService } from 'src/app/core/services/http.service';
 export class TopDealsByCategoryComponent implements OnInit {
 
   topDealsByCategoryData:any=[];
-  constructor(private http:HttpService){ }
+  constructor(private http:HttpService,private cart:CartService){ }
 
   ngOnInit(): void {
     this.getTopDealsByCategory();
@@ -23,6 +25,11 @@ export class TopDealsByCategoryComponent implements OnInit {
         console.log(error);
     })
   }
+  addTocard(item:any){
+    this.cart.addItemTocard(item);
+  }
+  
+
 
 
 }

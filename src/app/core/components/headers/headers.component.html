@@ -8,7 +8,9 @@
         </a>
         <div class="text-end me-5">
             <a  class="text-decoration-none me-3">About Us</a>
-            <a  class="text-decoration-none ms-2 cursor" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+            <a  class="text-decoration-none ms-2 cursor" data-bs-toggle="modal" data-bs-target="#loginModal" *ngIf="!isUserLoggedIn">Login</a>
+            <span  class="ms-2 cursor" *ngIf="isUserLoggedIn">{{userDetails?.userName}}</span>
+            <i class="bi bi-cart3 ms-3 fs-5 cursor card2" routerLink="/cart"></i><span class="border rounded-circle px-1 bg-danger text-white me-5 cart">{{cartCounter}}</span>
         </div>
     </div>
 </nav>
@@ -21,7 +23,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" #closeBtn></button>
       </div>
       <div class="modal-body">
-        <app-signin *ngIf="actionName==='SignIn'"></app-signin>
+        <app-signin *ngIf="actionName==='SignIn'" (emitAction)="getAction($event)"></app-signin>
         <app-signup  *ngIf="actionName==='SignUp'"></app-signup> 
       </div>
       <div class="d-grid gap-2 m-3">
