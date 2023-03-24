@@ -1163,6 +1163,131 @@
       "mobileNumber": "1234567890",
       "isMobNoVerified": true,
       "id": 4
+    },
+    {
+      "userName": "mahesh",
+      "password": "1234",
+      "mobileNumber": "7028673450",
+      "isMobNoVerified": false,
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "customerName": "shreesh",
+      "mobileNo": "07028673450",
+      "gender": "",
+      "dateOfBirth": "2021-03-07",
+      "emailId": "shreesh@gmail.com",
+      "address": {
+        "line1": "1234",
+        "line2": "nashik",
+        "landmark": "sukena",
+        "city": "abc",
+        "state": "Maharashtra",
+        "pincode": "423344"
+      },
+      "products": [
+        {
+          "productName": "HIMALAYA NEEM & TURMERIC SOAP 125GM",
+          "brand": "THE HIMALAYA DRUG COMPANY",
+          "type": "BOX",
+          "drugCode": 10014260,
+          "actualPrice": 50,
+          "discountedPrice": 50,
+          "quantity": 1,
+          "productTotalPrice": 50
+        },
+        {
+          "productName": "ELECTRAL POWDER 4.4GM",
+          "brand": "FDC LIMITED",
+          "type": "SACHET",
+          "drugCode": 381015,
+          "actualPrice": 4,
+          "discountedPrice": 4,
+          "quantity": 1,
+          "productTotalPrice": 4
+        }
+      ],
+      "totalAmount": 54,
+      "totalDiscount": 10,
+      "finalAmountToPay": 44,
+      "orderId": 5977911,
+      "id": 1
+    },
+    {
+      "customerName": "",
+      "mobileNo": "",
+      "gender": "",
+      "dateOfBirth": "",
+      "emailId": "",
+      "address": {
+        "line1": "",
+        "line2": "",
+        "landmark": "",
+        "city": "",
+        "state": "",
+        "pincode": ""
+      },
+      "products": [],
+      "totalAmount": 0,
+      "totalDiscount": 10,
+      "finalAmountToPay": -10,
+      "orderId": 2204186,
+      "id": 2
+    },
+    {
+      "customerName": "",
+      "mobileNo": "",
+      "gender": "",
+      "dateOfBirth": "",
+      "emailId": "",
+      "address": {
+        "line1": "",
+        "line2": "",
+        "landmark": "",
+        "city": "",
+        "state": "",
+        "pincode": ""
+      },
+      "products": [],
+      "totalAmount": 0,
+      "totalDiscount": 10,
+      "finalAmountToPay": -10,
+      "orderId": 1940778,
+      "id": 3
+    },
+    {
+      "customerName": "shreesh",
+      "mobileNo": "07028673450",
+      "gender": true,
+      "dateOfBirth": "2023-03-07",
+      "emailId": "shreesh@gmail.com",
+      "address": {
+        "line1": "1234",
+        "line2": "nashik",
+        "landmark": "sukena",
+        "city": "abc",
+        "state": "Maharashtra",
+        "pincode": "423344"
+      },
+      "products": [
+        {
+          "productName": "Manforce Lube, Lubrication Gel for Men & Women, Water-Based Gel, Skin-Friendly, Safe to Use with Condoms, Strawberry Flavoured, 60ml",
+          "brand": "Mankind",
+          "type": "Tube",
+          "drugCode": "1000054917",
+          "actualPrice": 300,
+          "discountedPrice": 300,
+          "quantity": 1,
+          "productTotalPrice": 300
+        }
+      ],
+      "totalAmount": 300,
+      "totalDiscount": 10,
+      "finalAmountToPay": 290,
+      "orderId": 6562873,
+      "id": 4
     }
   ]
 }
