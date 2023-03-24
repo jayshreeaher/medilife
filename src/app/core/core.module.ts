@@ -3,6 +3,11 @@ import { CommonModule } from '@angular/common';
 import { HeadersComponent } from './components/headers/headers.component';
 import { FootersComponent } from './components/footers/footers.component';
 import { PageNotFountComponent } from './components/page-not-fount/page-not-fount.component';
+import { SigninComponent } from './components/signin/signin.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -10,14 +15,21 @@ import { PageNotFountComponent } from './components/page-not-fount/page-not-foun
   declarations: [
     HeadersComponent,
     FootersComponent,
-    PageNotFountComponent
+    PageNotFountComponent,
+    SigninComponent,
+    SignupComponent,
+    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    RouterModule
   ],
   exports:[
     HeadersComponent,
-    FootersComponent
+    FootersComponent,
+    // SigninComponent,
+    // SignupComponent
   ]
 })
 export class CoreModule { }
